@@ -16,7 +16,7 @@ public class Main {
             tageDesMonats = Byte.parseByte(input);
         */
 
-        // Mit Code Validation ist es:
+        // Zusatz; Mit Code Validation ist es:
         try {
             System.out.println("Wie viele Tage hat der Monat, für den Sie die Sekundenzahl berechnen wollen?");
             String input = inputMonatTage.nextLine();
