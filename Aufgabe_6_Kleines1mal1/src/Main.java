@@ -4,6 +4,8 @@ public class Main {
         System.out.println("Kleines 1x1");
         System.out.println("-----------");
 
+        System.out.println("hello world");
+
 
     }
 }
