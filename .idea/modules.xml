@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_1_Addierer/Aufgabe_1_Addierer.iml" filepath="$PROJECT_DIR$/Aufgabe_1_Addierer/Aufgabe_1_Addierer.iml" />
       <module fileurl="file://$PROJECT_DIR$/BLJ-Java-Grundlagen.iml" filepath="$PROJECT_DIR$/BLJ-Java-Grundlagen.iml" />
     </modules>
   </component>
