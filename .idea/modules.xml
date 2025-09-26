@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Aufgabe_1_Addierer/Aufgabe_1_Addierer.iml" filepath="$PROJECT_DIR$/Aufgabe_1_Addierer/Aufgabe_1_Addierer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_3_FlussdiagramImplementieren1/Aufgabe_3_FlussdiagramImplementieren1.iml" filepath="$PROJECT_DIR$/Aufgabe_3_FlussdiagramImplementieren1/Aufgabe_3_FlussdiagramImplementieren1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Augabe_2_AnzahlSekundenMonat/Augabe_2_AnzahlSekundenMonat.iml" filepath="$PROJECT_DIR$/Augabe_2_AnzahlSekundenMonat/Augabe_2_AnzahlSekundenMonat.iml" />
       <module fileurl="file://$PROJECT_DIR$/BLJ-Java_Grundlagen.iml" filepath="$PROJECT_DIR$/BLJ-Java_Grundlagen.iml" />
     </modules>
