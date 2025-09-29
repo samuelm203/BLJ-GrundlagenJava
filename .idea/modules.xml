@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_10/Aufgabe 10_Quersumme.iml" filepath="$PROJECT_DIR$/Aufgabe_10/Aufgabe 10_Quersumme.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aufgabe_1/Aufgabe 1_Addierer.iml" filepath="$PROJECT_DIR$/Aufgabe_1/Aufgabe 1_Addierer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aufgabe_3/Aufgabe 3_FlussdiagramImplementieren1.iml" filepath="$PROJECT_DIR$/Aufgabe_3/Aufgabe 3_FlussdiagramImplementieren1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aufgabe_4/Aufgabe 4_Monatsnamen.iml" filepath="$PROJECT_DIR$/Aufgabe_4/Aufgabe 4_Monatsnamen.iml" />

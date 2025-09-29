@@ -17,10 +17,12 @@ public class Main {
             }
         }
         catch(java.util.InputMismatchException ex) {
-            System.out.println("Gib eine Zahl ein.");
+           System.out.println("Gib eine Zahl ein.");
+           return;
         }
         catch (Exception ex) {
-            System.out.println("Fehler beim Lesen der Zahl ein!");
+            System.out.println("Fehler beim Lesen der Zahl ein! fehlertyp: " + ex );
+            return;
         }
 
         userEingabeBereitOderNicht = inputInKm.nextLine();
