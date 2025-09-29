@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Aufgabe_1_Addierer/Aufgabe 1_Addierer.iml" filepath="$PROJECT_DIR$/Aufgabe_1_Addierer/Aufgabe 1_Addierer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Aufgabe_3_FlussdiagramImplementieren1/Aufgabe 3_FlussdiagramImplementieren1.iml" filepath="$PROJECT_DIR$/Aufgabe_3_FlussdiagramImplementieren1/Aufgabe 3_FlussdiagramImplementieren1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Aufgabe_4_Monatsnamen/Aufgabe 4_Monatsnamen.iml" filepath="$PROJECT_DIR$/Aufgabe_4_Monatsnamen/Aufgabe 4_Monatsnamen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Aufgabe_5_FlussdiagrammImplementieren2/Aufgabe 5_FlussdiagrammImplementieren2.iml" filepath="$PROJECT_DIR$/Aufgabe_5_FlussdiagrammImplementieren2/Aufgabe 5_FlussdiagrammImplementieren2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Aufgabe_6_Kleines1mal1/Aufgabe 6_Kleines1mal1.iml" filepath="$PROJECT_DIR$/Aufgabe_6_Kleines1mal1/Aufgabe 6_Kleines1mal1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Augabe_2_AnzahlSekundenMonat/Augabe 2_AnzahlSekundenMonat.iml" filepath="$PROJECT_DIR$/Augabe_2_AnzahlSekundenMonat/Augabe 2_AnzahlSekundenMonat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_1/Aufgabe 1_Addierer.iml" filepath="$PROJECT_DIR$/Aufgabe_1/Aufgabe 1_Addierer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_3/Aufgabe 3_FlussdiagramImplementieren1.iml" filepath="$PROJECT_DIR$/Aufgabe_3/Aufgabe 3_FlussdiagramImplementieren1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_4/Aufgabe 4_Monatsnamen.iml" filepath="$PROJECT_DIR$/Aufgabe_4/Aufgabe 4_Monatsnamen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_5/Aufgabe 5_FlussdiagrammImplementieren2.iml" filepath="$PROJECT_DIR$/Aufgabe_5/Aufgabe 5_FlussdiagrammImplementieren2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_6/Aufgabe 6_Kleines1mal1.iml" filepath="$PROJECT_DIR$/Aufgabe_6/Aufgabe 6_Kleines1mal1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabe_2/Augabe 2_AnzahlSekundenMonat.iml" filepath="$PROJECT_DIR$/Aufgabe_2/Augabe 2_AnzahlSekundenMonat.iml" />
       <module fileurl="file://$PROJECT_DIR$/BLJ-Java_Grundlagen.iml" filepath="$PROJECT_DIR$/BLJ-Java_Grundlagen.iml" />
     </modules>
   </component>
