@@ -34,7 +34,6 @@ public class Main {
             String eingabe = hallo.nextLine();
 
             if (eingabe.equalsIgnoreCase("j")) {
-                // hier könntest du nochmal main(args) aufrufen oder eine Schleife einbauen
                 System.out.println("Dann hol dir noch einen 😄");
             } else {
                 System.out.println("Okay, bis zum nächsten Mal!");
