@@ -7,7 +7,7 @@ public class Main {
 
         String[] ausgabe = new String[laengeLinie + 1];
 
-        for (int i = 0; i <= laengeLinie; i++) {
+        for (int i = 0; i < laengeLinie; i++) {
             ausgabe[i] = " ";
             for (int d = i + 1; i + d <= laengeLinie; d++) {
                 ausgabe[i + d] = "*";
@@ -30,19 +30,22 @@ public class Main {
 
 
         public static void main (String[]args){
+            try {
+                Scanner input = new Scanner(System.in);
 
-            Scanner input = new Scanner(System.in);
+                System.out.println("Wie lange soll die Linie sein?");
+                System.out.print("Deine Eingabe: ");
 
-            System.out.println("Wie lange soll die Linie sein?");
-            System.out.print("Deine Eingabe: ");
+                int laengeLinie = input.nextInt();
 
-            int laengeLinie = input.nextInt();
-
-            if (laengeLinie == 0) {
-                System.out.println("Ungültige Eingabe");
-                System.exit(0);
-            } else {
-                zeichneLinie(laengeLinie);
+                if (laengeLinie == 0) {
+                    System.out.println("Ungültige Eingabe");
+                    System.exit(0);
+                } else {
+                    zeichneLinie(laengeLinie);
+                }
+            } catch (Exception ex) {
+                System.out.println("Fehler: Falsche Eingabe");
             }
         }
     }

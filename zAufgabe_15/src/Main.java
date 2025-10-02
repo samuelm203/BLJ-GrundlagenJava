@@ -3,18 +3,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        try {
+            Scanner input = new Scanner(System.in);
 
-        System.out.print("Wie breit soll die Stamm sein?");
-        int breiteStamm = input.nextInt();
+            System.out.print("Wie breit soll die Stamm sein?");
+            int breiteStamm = input.nextInt();
 
-        System.out.print("Wie hoch soll der Stamm sein?");
-        int hoeheStamm = input.nextInt();
+            System.out.print("Wie hoch soll der Stamm sein?");
+            int hoeheStamm = input.nextInt();
 
-        System.out.print("Wie hoch soll die Krone sein?");
-        int hoeheKrone  = input.nextInt();
+            System.out.print("Wie hoch soll die Krone sein?");
+            int hoeheKrone  = input.nextInt();
 
-        zeichneBaum(hoeheStamm, breiteStamm, hoeheKrone);
+            zeichneBaum(hoeheStamm, breiteStamm, hoeheKrone);
+        } catch (Exception ex) {
+            System.out.println("Fehler: Falsche Eingabe ");
+        }
     }
 
     static void zeichneKrone(int hoeheKrone) {

@@ -37,21 +37,25 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String[] vokale = {"a", "e", "i", "o", "u", "ä", "ö", "ü"};
-        Scanner input = new Scanner(System.in);
+        try {
+            String[] vokale = {"a", "e", "i", "o", "u", "ä", "ö", "ü"};
+            Scanner input = new Scanner(System.in);
 
-        System.out.println("Gib einen Satz ein: ");
-        String satz = input.nextLine().toLowerCase();
+            System.out.println("Gib einen Satz ein: ");
+            String satz = input.nextLine().toLowerCase();
 
-        String[] satzInEinzelnBuchstaben = satz.split("");
+            String[] satzInEinzelnBuchstaben = satz.split("");
 
-        String[] alleVokaleImSatz = ueberpruefen(satzInEinzelnBuchstaben, vokale);
+            String[] alleVokaleImSatz = ueberpruefen(satzInEinzelnBuchstaben, vokale);
 
-        String[] cleanedArray = Arrays.stream(alleVokaleImSatz)
-                .filter(Objects::nonNull)
-                .toArray(String[]::new); // entfernt Nulls
+            String[] cleanedArray = Arrays.stream(alleVokaleImSatz)
+                    .filter(Objects::nonNull)
+                    .toArray(String[]::new); // entfernt Nulls
 
-        System.out.println("Dein Text enthält " + cleanedArray.length + " Vokale.");
-        welcheVokale(cleanedArray);
+            System.out.println("Dein Text enthält " + cleanedArray.length + " Vokale.");
+            welcheVokale(cleanedArray);
+        } catch (Exception ex) {
+            System.out.println("Fehler: " + ex.getMessage());
+        }
     }
 }

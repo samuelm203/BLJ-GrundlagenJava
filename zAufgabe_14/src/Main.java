@@ -32,28 +32,30 @@ public class Main {
         System.out.println("------------------------------------------------------------");
         System.out.println("Prüfen, ob es sich bei einem Jahr um ein Schaltjahr handelt.");
         System.out.println("------------------------------------------------------------");
+        try{
+            while (wiederholung) {
+                Scanner input = new Scanner(System.in);
 
-        while (wiederholung) {
-            Scanner input = new Scanner(System.in);
+                System.out.print("Eingabe Jahr (q to quit): ");
+                String jahr = input.nextLine();
 
-            System.out.print("Eingabe Jahr (q to quit): ");
-            String jahr = input.nextLine();
+                if (jahr.equalsIgnoreCase("q")) {
+                    System.out.println("Konsolenprogramm wird beendet");
+                    wiederholung = false;
+                    System.exit(0);
+                }
 
-            if (jahr.equalsIgnoreCase("q")) {
-                System.out.println("Konsolenprogramm wird beendet");
-                wiederholung = false;
-                System.exit(0);
+                int jahrInInt = Integer.parseInt(jahr);
+                boolean schaltjahr = welchesJahr(jahrInInt);
+
+                if (schaltjahr) {
+                    System.out.println("Das Jahr " + jahr + " ist ein Schaltjahr.");
+                } else {
+                    System.out.println("Das Jahr " + jahr + " ist KEIN Schaltjahr.");
+                }
             }
-
-            int jahrInInt = Integer.parseInt(jahr);
-            boolean schaltjahr = welchesJahr(jahrInInt);
-
-            if (schaltjahr) {
-                System.out.println("Das Jahr " + jahr + " ist ein Schaltjahr.");
-            } else {
-                System.out.println("Das Jahr " + jahr + " ist KEIN Schaltjahr.");
-            }
+        } catch (Exception ex) {
+            System.out.println("Fehler: Falsche Eingabe");
         }
     }
-
 }

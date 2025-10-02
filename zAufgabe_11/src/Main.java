@@ -46,27 +46,31 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner inputNumbers = new Scanner(System.in);
-        int zahl1Input;
-        int zahl2Input;
+        try {
+            Scanner inputNumbers = new Scanner(System.in);
+            int zahl1Input;
+            int zahl2Input;
 
-        System.out.println("Gib die erste Zahl ein: ");
-        zahl1Input = inputNumbers.nextInt();
+            System.out.println("Gib die erste Zahl ein: ");
+            zahl1Input = inputNumbers.nextInt();
 
-        System.out.println("Gib die zweite Zahl ein:");
-        zahl2Input = inputNumbers.nextInt();
+            System.out.println("Gib die zweite Zahl ein:");
+            zahl2Input = inputNumbers.nextInt();
 
-        int[] allNumbers = berechneZahlen(zahl1Input, zahl2Input);
-        int[] allQuersumme = berechneQuersumme(allNumbers);
-        boolean[] teilbar = berechneDivision(allNumbers, allQuersumme);
+            int[] allNumbers = berechneZahlen(zahl1Input, zahl2Input);
+            int[] allQuersumme = berechneQuersumme(allNumbers);
+            boolean[] teilbar = berechneDivision(allNumbers, allQuersumme);
 
-        System.out.println("Zahl\tQuersumme\tZahl/Quersumme");
+            System.out.println("Zahl\tQuersumme\tZahl/Quersumme");
 
-        for (int i = 0; i < allNumbers.length; i++) {
-            if (teilbar[i]) {
-                int division = allNumbers[i] / allQuersumme[i];
-                System.out.println(allNumbers[i] + "\t\t" + allQuersumme[i] + "\t\t\t" + division);
+            for (int i = 0; i < allNumbers.length; i++) {
+                if (teilbar[i]) {
+                    int division = allNumbers[i] / allQuersumme[i];
+                    System.out.println(allNumbers[i] + "\t\t" + allQuersumme[i] + "\t\t\t" + division);
+                }
             }
+        } catch (Exception ex) {
+            System.out.println("Fehler: Falsche Eingabe");
         }
     }
 }
