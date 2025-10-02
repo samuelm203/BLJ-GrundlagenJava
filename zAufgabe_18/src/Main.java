@@ -5,41 +5,53 @@ import java.util.Scanner;
 public class Main {
 
     static String[] ueberpruefen(String[] satzInEinzelnBuchstaben, String[] vokale) {
-
-        int counterVokale = 0;
         String[] vokaleImSatz = new String[satzInEinzelnBuchstaben.length];
 
         for (int i = 0; i < vokale.length; i++) {
             for (int j = 0; j < satzInEinzelnBuchstaben.length; j++) {
                 if (satzInEinzelnBuchstaben[j].equals(vokale[i])) {
-                    counterVokale++;
                     vokaleImSatz[j] = satzInEinzelnBuchstaben[j];
                 }
             }
         }
-
         return vokaleImSatz;
     }
 
-    public static void main(String[] args) {
+    static void welcheVokale(String[] cleanedArray) {
+        String[] vokale = {"a", "e", "i", "o", "u", "ä", "ö", "ü"};
+        int[] zaehler = new int[vokale.length];
 
-        String[] vokale = {"a", "e", "i","o", "u", "ä", "ö", "ü"};
+        for (String buchstabe : cleanedArray) {
+            for (int i = 0; i < vokale.length; i++) {
+                if (buchstabe.equals(vokale[i])) {
+                    zaehler[i]++;
+                }
+            }
+        }
+
+        for (int i = 0; i < vokale.length; i++) {
+            if (zaehler[i] > 0) {
+                System.out.println("Der Buchstabe '" +vokale[i] + "' kommt " + zaehler[i] + " mal vor.");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        String[] vokale = {"a", "e", "i", "o", "u", "ä", "ö", "ü"};
         Scanner input = new Scanner(System.in);
 
         System.out.println("Gib einen Satz ein: ");
-        String satz = input.nextLine();
-
-        satz = satz.toLowerCase();
+        String satz = input.nextLine().toLowerCase();
 
         String[] satzInEinzelnBuchstaben = satz.split("");
 
-        ueberpruefen(satzInEinzelnBuchstaben, vokale);
-
         String[] alleVokaleImSatz = ueberpruefen(satzInEinzelnBuchstaben, vokale);
 
-        String[] cleanedArray = Arrays.stream(alleVokaleImSatz).filter(Objects::nonNull).toArray(String[]::new); //entfernt alle Nulls aus dem Array
+        String[] cleanedArray = Arrays.stream(alleVokaleImSatz)
+                .filter(Objects::nonNull)
+                .toArray(String[]::new); // entfernt Nulls
 
         System.out.println("Dein Text enthält " + cleanedArray.length + " Vokale.");
-
+        welcheVokale(cleanedArray);
     }
 }
