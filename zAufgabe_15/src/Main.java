@@ -6,13 +6,13 @@ public class Main {
         try {
             Scanner input = new Scanner(System.in);
 
-            System.out.print("Wie breit soll die Stamm sein?");
+            System.out.print("Wie breit soll die Stamm sein? ");
             int breiteStamm = input.nextInt();
 
-            System.out.print("Wie hoch soll der Stamm sein?");
+            System.out.print("Wie hoch soll der Stamm sein? ");
             int hoeheStamm = input.nextInt();
 
-            System.out.print("Wie hoch soll die Krone sein?");
+            System.out.print("Wie hoch soll die Krone sein? ");
             int hoeheKrone  = input.nextInt();
 
             zeichneBaum(hoeheStamm, breiteStamm, hoeheKrone);
